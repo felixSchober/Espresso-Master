@@ -6,20 +6,33 @@ import logging
 import time
 import sys
 import requests
-import json
 from win10toast import ToastNotifier
 
+# IP of your Hue Bridge
 HUE_BRIDGE_IP = '192.168.178.20'
+
+# Name of the plug unit of your appliance
 # noinspection SpellCheckingInspection
 ESPRESSO_MACHINE_NAME = 'Espresso Maschine'
+
+# Name of an additional light indicator (will flash red if machine is ready)
 # noinspection SpellCheckingInspection
 ESPRESSO_MACHINE_LIGHT_INDICATOR = 'Küche Vorraum'
+
+# how long will the machine take to warm up (seconds)
 WARM_UP_TIME = 75
+
+# how long until it will turn off again
 TURN_OFF_TIME = 130
 
+# Your IFTTT webhook key - example L3XjFGgdTPKlUR_WUC5ya
 # noinspection SpellCheckingInspection
-IFTTT_MAKER_ID = 'L3XjFGgdTPKlUR_WUC5ya'
-IFTTT_EVENT_NAME = 'espresso_notification'
+IFTTT_MAKER_ID = ''
+
+# Name of your IFTTT applet - example espresso_notification
+IFTTT_EVENT_NAME = ''
+
+# Do not change
 IFTTT_MAKER_URL = 'https://maker.ifttt.com/trigger/{0}/with/key/{1}'
 
 
