@@ -1,0 +1,5 @@
+win10toast>=0.8
+win32gui
+requests
+phue>=0.9
+pushalot>=0.1
